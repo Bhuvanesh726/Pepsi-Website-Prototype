@@ -1,0 +1,93 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply the same font family as your main page */
+body {
+    font-family: 'poppins', sans-serif;
+}
+
+/* Match the background color and overall layout */
+section.sec {
+    background: #0062be;
+}
+
+/* Header styles to match the main page */
+header {
+    padding: 20px 100px;
+    color: #fff;
+}
+
+header .logo {
+    max-width: 80px;
+}
+
+header ul li a {
+    color: #fff;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+/* Content styles to match the main page */
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox h2 {
+    color: #fff;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.content .textBox h2 span {
+    font-size: 2em;
+}
+
+.content .textBox p {
+    color: #fff;
+}
+
+.content .textBox a {
+    background: #fff;
+    color: #111;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Additional styles specific to the newsletter page */
+.newsletter-content {
+    margin: 40px;
+    text-align: center;
+}
+
+.newsletter-content h3 {
+    font-size: 2em;
+    color: #fff;
+}
+
+.newsletter-content p {
+    color: #fff;
+    margin: 20px 0;
+}
+
+/* Style images specific to the newsletter content */
+.newsletter-content img {
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+/* Social media icons, if present, can be styled like the main page */
+
+/* Adjust any other styles as needed for your newsletter page */

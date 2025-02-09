@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Pepsi</title>
+    <link rel="stylesheet" href="login-style.css">
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="login-box">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <input type="text" name="username" placeholder="Username">
+                    <input type="password" name="password" placeholder="Password">
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        document.getElementById("login-form").addEventListener("submit", function (event){
+            event.preventDefault();
+            const username = document.getElementsByName("username")[0].value;
+            const password = document.getElementsByName("password")[0].value;
+            // Check the credentials (replace with your logic)
+            if (username === "2300030097" && password === "Bhuvanesh") {
+                window.location.href = "your-main-page.html"; // Redirect to your main page
+            } 
+            else if (username === "2300031438" && password === "eswar") {
+                window.location.href = "your-main-page.html";
+            }
+            else if (username === "2300031236" && password === "Mohit") {
+                window.location.href = "your-main-page.html";
+            }
+            else if (username === "2300033385" && password === "Akhil") {
+                window.location.href = "your-main-page.html";
+            }
+            else {
+                alert("Incorrect username or password. Please try again.");
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pepsi Products</title>
+    <link rel="stylesheet" href="style.css"> <!-- Your main stylesheet -->
+    <link rel="stylesheet" href="product-style.css"> <!-- Add this line to link the product-specific stylesheet -->
+  </head>
+  <body>
+    <section class="sec">
+      <header>
+        <a href="#"><img src="logo.png" class="logo"></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="what's new.html">What's New</a></li>
+          <li><a href="New's Letter.html">NewsLetter</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <!-- Product 1: Pepsi Can -->
+        <div class="product">
+          <img src="pepsi001.png" alt="Pepsi Can">
+          <h3>Pepsi Can</h3>
+          <p class="price">₹40</p>
+          <button class="view-more" onclick="showDescription('pepsi001')">View More</button>
+          <p id="pepsi001-description" class="product-description">
+            Enjoy the classic taste of Pepsi in a convenient can.
+          </p>
+        </div>
+
+        <!-- Product 2: Diet Pepsi Can -->
+        <div class="product">
+          <img src="pepsi002.png" alt="Diet Pepsi Can">
+          <h3>Diet Pepsi Can</h3>
+          <p class="price">₹50</p>
+          <button class="view-more" onclick="showDescription('pepsi002')">View More</button>
+          <p id="pepsi002-description" class="product-description">
+            Same great Pepsi taste with zero sugar and calories.
+          </p>
+        </div>
+
+        <!-- Product 3: Pepsi Zero Sugar Can -->
+        <div class="product">
+          <img src="pepsi003.png" alt="Pepsi Zero Sugar Can">
+          <h3>Pepsi Zero Sugar Can</h3>
+          <p class="price">₹55</p>
+          <button class="view-more" onclick="showDescription('pepsi003')">View More</button>
+          <p id="pepsi003-description" class="product-description">
+            No sugar, all the flavor. Try Pepsi Zero Sugar today.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+      function showDescription(productId) {
+        const description = document.getElementById(`${productId}-description`);
+        description.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
